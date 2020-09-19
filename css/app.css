@@ -1,0 +1,213 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	height: 100%;
+}
+body {
+  
+  background-color: #F0F0F0;
+}
+
+.body1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.widget p {
+	display: inline-block;
+}
+.fecha {
+	font-family: Oswald, Arial;
+	text-align: center;
+	font-size:1em;
+	margin-bottom: 0.3125rem;
+	background: rgba(0,0,0,.5);
+	padding: 1px 10px;
+  width: 100%;
+  color:#fff;
+}
+.reloj2 {
+	font-family: Oswald, Arial;
+	width: 100%;
+  padding: 0 10px;
+	font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 0.3125rem;
+  background: rgba(0,0,0,.5);
+  color:#fff;
+}
+
+
+.reloj {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	border: 5px solid rgb(22, 100, 26);
+	position: relative;
+	display: none;
+}
+
+.aguja {
+	background: rgb(27, 27, 27);
+	top: 50%;
+	position: absolute;
+	transform-origin: 100%;
+	transition: all 0.1s;
+	transition-timing-function: ease-in-out;
+}
+
+.horario {
+	width: 30%;
+	left: 20%;
+	height: 4px;
+	transform: translateY(-2px);
+}
+
+.minutero {
+	width: 40%;
+	left: 10%;
+	height: 4px;
+	transform: translateY(-2px);
+}
+
+.segundero {
+	width: 45%;
+	left: 5%;
+	height: 2px;
+	transform: translateY(-1px);
+}
+
+.diallines {
+  position: absolute;
+  z-index: 2;
+  width: 2px;
+  height: 15px;
+  background: darkgreen;
+  left: 50%;
+  margin-left: -1px;
+  transform-origin: 50% 150px;
+}
+.diallines:nth-of-type(5n) {
+  position: absolute;
+  z-index: 2;
+  width: 4px;
+  height: 25px;
+  background: darkgreen;
+  left: 50%;
+  margin-left: -1px;
+  transform-origin: 50% 150px;
+}
+
+span {
+  display: inline-block;
+  position: absolute;
+  color: rgb(6, 187, 6);
+  font-size: 22px;
+  font-family: 'Poiret One';
+  font-weight: 700;
+  z-index: 4;
+}
+
+.h1 {
+  top: 40px;
+  right: 90px;
+}
+
+.h2 {
+  top: 80px;
+  right: 50px;
+}
+
+.h3 {
+  top: 140px;
+  right: 30px;
+}
+
+.h4 {
+	top: 195px;
+	right: 50px;
+}
+
+.h5 {
+  top: 235px;
+  right: 90px;
+}
+
+.h6 {
+	bottom: 30px;
+  left: 50%;
+  margin-left: -5px;
+}
+
+.h7 {
+  left: 90px;
+  top: 235px;
+}
+
+.h8 {
+  left: 50px;
+  top: 195px;
+}
+
+.h9 {
+	left: 32px;
+  top: 140px;
+}
+
+.h10 {
+	left: 50px;
+  top: 80px;
+}
+
+.h11 {
+	left: 90px;
+	top: 40px;
+}
+
+.h12 {
+  top: 30px;
+  left: 50%;
+  margin-left: -9px;
+}
+.body3 {
+  margin-top: 20px;
+	width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+
+
+.form__input {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 1.2rem;
+	margin: 0 auto;
+  padding: 1rem 1.5rem;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+  text-align: center;
+  justify-content: center;
+}
+.form__submit {
+  color: #fff;
+  font-size: 1.2rem;
+	margin: 0 auto;
+  padding: 1rem 1.5rem;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  justify-content: center;
+  display: block;
+  background-color: darkgreen;
+  width: 100%;
+}
